@@ -11,36 +11,36 @@ const DetailsCard: React.FC = () => {
     <div className="details-card">
       <h2>Details</h2>
       <div className="details-item">
-        <span className="data-title">Drone count:</span>
-        <span className="data">1</span>
-        <span className="logo">
+        <p className="data-title">Drone count:<span className="data">1</span><span className="logo">
           <GiDeliveryDrone />
-        </span>
+        </span></p>
+       
+        
       </div>
       <div className="details-item">
-        <span className="data-title">Message send:</span>
-        <span className="data">Yes</span>
+        <p className="data-title">Message send:<span className="data">Yes</span>
         <span className="logo">
           <FaCheck />
-        </span>
+        </span></p>
+        
 
         <i className="icon-check" />
       </div>
       <div className="details-item">
-        <span className="data-title">Buzzer:</span>
-        <span className="data">On</span>
+        <p className="data-title">Buzzer:<span className="data">On</span>
         <span className="logo">
           <AiOutlineSound />
-        </span>
+        </span></p>
+        
 
         <i className="icon-buzzer" />
       </div>
       <div className="details-item">
-        <span className="data-title">Camera:</span>
-        <span className="data">Online</span>
+        <p className="data-title">Camera:<span className="data">Online</span>
         <span className="logo">
           <BsCameraVideo />
-        </span>
+        </span></p>
+        
         <i className="icon-online" />
       </div>
     </div>

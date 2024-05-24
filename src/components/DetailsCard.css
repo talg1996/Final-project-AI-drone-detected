@@ -3,26 +3,31 @@ h2 {
   font-size: 2rem;
 }
 .logo {
-  position: absolute;
-  right: 0.5rem;
   font-size: large;
 }
 .data-title {
   font-weight: 200;
   font-size: 1.5rem;
 
-  left: 1.5rem;
 }
 .data {
   font-weight: 200;
 
-  right: 2.3rem;
   font-size: large;
-  position: absolute;
 }
 .details-item {
-  position: relative;
+  display: flex;
 }
 .details-item span {
-  margin: 2px;
+}
+
+
+
+@media (max-width: 767px) {
+  
+  .details-item {
+    padding: 5px;
+flex-direction: column; 
+ }
+
 }

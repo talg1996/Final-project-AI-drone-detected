@@ -9,8 +9,8 @@ interface CardProps {
 function Card({ text, logo }: CardProps) {
   return (
     <div className="card-container">
-     {logo}
-      {text}
+    <p> {logo}</p>
+     <p>{text}</p> 
     </div>
   );
 }

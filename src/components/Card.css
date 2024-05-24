@@ -1,16 +1,13 @@
+/* Default styles for phone-sized screens */
 .card-container {
- 
   background-color: lightgreen;
-  height: auto;
+  height: 130px;
   max-width: 150px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  
-  gap: 5px;
   transition: transform 0.1s, background-color 0.1s;
 }
 
@@ -24,3 +21,19 @@
   transform: scale(0.95);
 }
 
+@media (max-width: 767px) {
+  .card-container {
+    height: auto;
+    max-width: 150px;
+  }
+
+  .card-container p {
+    transform: scale(0.7); /* Apply scale for smaller screens */
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 ;
+    padding: 1px;
+  }
+
+
+}
