@@ -1,16 +1,16 @@
 .card-container {
+ 
   background-color: lightgreen;
-  height: 10vh;
-  width: 15vw;
-  max-width: 250px;
+  height: auto;
+  max-width: 150px;
   border-radius: 10px;
-  margin: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  position: relative;
+  
+  gap: 5px;
   transition: transform 0.1s, background-color 0.1s;
 }
 
@@ -24,18 +24,3 @@
   transform: scale(0.95);
 }
 
-.Logo {
-  position: absolute;
-  top: 5px;
-  padding: 5px;
-  font-size: 4vw;
-  max-height: 20px;
-}
-
-.Logo-text {
-  bottom: 3px;
-  position: absolute;
-  font-size: 2vw;
-  font-weight: 1000px;
-  color: #333;
-}

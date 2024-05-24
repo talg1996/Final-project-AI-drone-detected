@@ -1,4 +1,3 @@
-// Header.tsx
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
@@ -10,8 +9,7 @@ import { FaListCheck } from "react-icons/fa6";
 
 function Header() {
   return (
-    <div className="header-container">
-      <div className="Header-container">
+      <div className="header-content">
         <Link className="link-text" to="/live">
           <Card text="Live" logo={<RiLiveLine />} />
         </Link>
@@ -25,7 +23,6 @@ function Header() {
           <Card text="List Check" logo={<FaListCheck />} />
         </Link>
       </div>
-    </div>
   );
 }
 

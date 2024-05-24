@@ -1,8 +1,7 @@
 // App.tsx
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Calc from "./components/calc";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Live from "./routes/Live";
 import Database from "./routes/Database";

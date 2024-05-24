@@ -1,0 +1,40 @@
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .infoDetails-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(230, 255, 192);
+    border-radius: 30px;
+    box-sizing: border-box; /* Ensuring padding is included in width */
+  }
+  
+  p {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 0 1rem; /* Adding margin to separate paragraphs */
+  }
+  
+  .teamLogo-container {
+    width: 30%; /* Adjust width to fit properly */
+    display: flex;
+    align-items: center; /* Center align the logo */
+    justify-content: center; /* Center align the logo */
+    box-sizing: border-box;
+  }
+  
+  .teamLogo-container img {
+    max-width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  p span {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 0 1rem; /* Adding margin to separate paragraphs */
+  }

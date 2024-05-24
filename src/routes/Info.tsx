@@ -1,11 +1,10 @@
 // routes/Info.tsx
 import React from "react";
-
+import InfoTab from "../components/InfoTab"
 const Info: React.FC = () => {
   return (
     <div>
-      <h2>Info</h2>
-      <p>This is the Info route.</p>
+     <InfoTab/>
     </div>
   );
 };
