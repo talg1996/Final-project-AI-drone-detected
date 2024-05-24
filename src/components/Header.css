@@ -1,0 +1,24 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.Header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 5px 10px 13px 4px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 5px 10px 13px 4px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 5px 10px 13px 4px rgba(0, 0, 0, 0.29);
+}
+.link-text {
+  text-decoration: none; /* Remove the underline */
+  color: inherit; /* Inherit the color from the parent */
+}
