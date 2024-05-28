@@ -12,3 +12,11 @@
     margin: 0px;
 
 }
+
+
+.web-container img .drone-detected {
+  
+  border: 15px solid red !important;
+ 
+
+}

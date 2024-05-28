@@ -7,7 +7,7 @@ const LivePreview: React.FC = () => {
 
   return (
     <div className='web-container'>
-      <img src="http://192.168.1.25:5000/video_feed" />
+      <img className="drone-detected" src="http://localhost:5000/live_stream"  /> 
     </div>
   );
 };
