@@ -8,8 +8,13 @@ import Database from "./routes/Database";
 import Info from "./routes/Info";
 import ListCheck from "./routes/ListCheck";
 
+
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+
 const App: React.FC = () => {
   return (
+    
     <Router>
       <div>
         <Header />
@@ -21,6 +26,7 @@ const App: React.FC = () => {
         </Routes>
       </div>
     </Router>
+    
   );
 };
 

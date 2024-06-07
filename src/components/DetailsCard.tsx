@@ -7,16 +7,19 @@ import { FaCheck } from "react-icons/fa";
 import axios from "axios";
 
 const DetailsCard: React.FC = () => {
-  const [droneCount, setDroneCount] = useState<number>(0);
+  const [droneCounts, setDroneCounts] = useState<{ DronesDetectedCam1: number; DronesDetectedCam2: number }>({
+    DronesDetectedCam1: 0,
+    DronesDetectedCam2: 0
+  });
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:5000/live_data');
         const data = response.data;
-        // Update droneCount state with the received data
+        // Update droneCounts state with the received data
         console.log(data);
-        setDroneCount(data.DronesDetected);
+        setDroneCounts(data);
       } catch (error) {
         console.error('Error fetching data:', error);
         // Handle error gracefully, e.g., display a message to the user
@@ -38,35 +41,37 @@ const DetailsCard: React.FC = () => {
       <h2>Details</h2>
       <div className="details-item">
         <p className="data-title">
-          <p>Drone count: </p>           <p>{droneCount} </p>         <p> <GiDeliveryDrone /></p>    
-         
+          <span>Drone count (Cam 1): </span>
+          <span>{droneCounts.DronesDetectedCam1} </span>
+          <span><GiDeliveryDrone /></span>
         </p>
       </div>
       <div className="details-item">
         <p className="data-title">
-        <p>  Message send: </p>
-         <p> Yes</p>
-         
-           <p> <FaCheck /></p>
-         
+          <span>Drone count (Cam 2): </span>
+          <span>{droneCounts.DronesDetectedCam2} </span>
+          <span><GiDeliveryDrone /></span>
         </p>
       </div>
       <div className="details-item">
         <p className="data-title">
-        <p>  Buzzer:</p>
-         <p>{droneCount > 0 ? "ON" : "OFF"}</p>
-          
-         <p>   <AiOutlineSound /></p>
-          
+          <span>Message send: </span>
+          <span>Yes</span>
+          <span><FaCheck /></span>
         </p>
       </div>
       <div className="details-item">
         <p className="data-title">
-          <p>Camera:</p>
-         <p>Online</p>
-         
-            <p> <BsCameraVideo /></p>
-        
+          <span>Buzzer:</span>
+          <span>{droneCounts.DronesDetectedCam1 > 0 || droneCounts.DronesDetectedCam2 > 0 ? "ON" : "OFF"}</span>
+          <span><AiOutlineSound /></span>
+        </p>
+      </div>
+      <div className="details-item">
+        <p className="data-title">
+          <span>Camera:</span>
+          <span>Online</span>
+          <span><BsCameraVideo /></span>
         </p>
       </div>
     </div>
